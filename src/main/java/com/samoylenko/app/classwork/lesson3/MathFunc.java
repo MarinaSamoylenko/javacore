@@ -48,4 +48,7 @@ public class MathFunc {
         return name + surname;
     }
 
+    public short myfunc(short a, short b, short c) {
+        return (short) (a + b * c);
+    }
 }

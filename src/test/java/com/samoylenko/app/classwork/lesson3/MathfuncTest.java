@@ -1,6 +1,6 @@
 package com.samoylenko.app.classwork.lesson3;
 
-import com.sun.tools.doclets.formats.html.PackageUseWriter;
+import com.samoylenko.app.classwork.lesson3.MathFunc;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,10 +10,10 @@ import org.junit.Test;
 public class MathfuncTest {
     @Test //Junit framework annotation
     public void multiplyTest() {
-        int a = 1;
-        int b = 2;
+        int w = 1;
+        int s = 2;
         MathFunc mathFunc = new MathFunc();
-        int actualResult = mathFunc.multiply(a, b);
+        int actualResult = mathFunc.multiply(w, s);
         int expectedResult = 2;
         Assert.assertEquals(expectedResult, actualResult);
     }
@@ -105,7 +105,7 @@ public class MathfuncTest {
         int a = 243;
         int b = 51;
         MathFunc getMinAndPlus = new MathFunc();
-        int actualResult = getMinAndPlus.minAndPlus(a, b);
+        int actualResult = getMinAndPlus.minAndPlus(a, b);//передача параметров
         int expectedResult = 588;
         Assert.assertEquals(expectedResult, actualResult);
     }
@@ -117,6 +117,16 @@ public class MathfuncTest {
         MathFunc sPlus = new MathFunc();
         String actualResult = sPlus.plus(name, surname);
         String expectedResult = "Marina Samoylenko";
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+    @Test
+    public void  myfuncz () {
+        short a = 2456;
+        short b = 5431;
+        short c = 1;
+        MathFunc getFunc = new MathFunc();
+        short actualResult = getFunc.myfunc (a, b, c);
+        short expectedResult = 7887;
         Assert.assertEquals(expectedResult, actualResult);
     }
 }
