@@ -30,6 +30,7 @@ protected String name;
     private int age;
     private int degree;
     public Person(String name){
+
         this.name = name;
     }
 
